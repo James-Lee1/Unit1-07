@@ -45,6 +45,7 @@ public class HardFootBoardCalc
 
         dimension3 = FootBoard(dimension1, dimension2);
 
+        // Checks if answer is valid
         if (dimension3 <= 0)
         {
              System.out.printf("Error : Invalid input! %n");
@@ -58,6 +59,8 @@ public class HardFootBoardCalc
     public static double FootBoard(String measure1, String measure2)
     {
             double measure3;
+
+            // Converts strings into doubles
             double dimension1 = Double.parseDouble(measure1);
             double dimension2 = Double.parseDouble(measure2);
 
@@ -72,6 +75,7 @@ public class HardFootBoardCalc
             double measure3;
             double VOLUME;
 
+            // Checks if measurements are valid
             if (measure1 <= 0 || measure2 <= 0)
             {
                 return -1.0;
@@ -88,7 +92,7 @@ public class HardFootBoardCalc
     }
 
     public static boolean isNumeric(String str)
-    {
+    {   // Checks if string is a valid number
         try
         {
             double d = Double.parseDouble(str);
